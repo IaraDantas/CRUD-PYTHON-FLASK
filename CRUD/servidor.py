@@ -1,7 +1,7 @@
 ####################################################################################
 # TITULO do arquivo python: servidor.py
-# AUTOR:
-# Data: 25/11/222 | PERIODO: 2022.2  | PROJETO: EM CURSO | Versão: 0.2
+# AUTOR: Iara de Melo Dantas Bezerra | iaradantasredes@gmail.com
+# Data: 25/11/222 | PERIODO: 2022.2  | PROJETO: Completo | Versão: 0.2
 # OBJETIVO DESSE ARQUIVO: Criar o web service com flask e aplicar a CRUD.
 ####################################################################################
 
