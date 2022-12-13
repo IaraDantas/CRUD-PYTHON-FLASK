@@ -1,23 +1,21 @@
 # CRUD-PYTHON-FLASK
 CRUD com Python e Flask em banco de dados SQLite
-
-
 ####################################################################################
-# TITULO do arquivo python: servidor.py
-# AUTOR:Iara de Melo Dantas Bezerra
-# Data: 25/11/222 | PERIODO: 2022.2  | PROJETO: Completo | Versão: 0.2
-# OBJETIVO DESSE ARQUIVO: Explicar o funcionamento do programa e sua execução.
+TITULO do arquivo python: servidor.py
+AUTOR:Iara de Melo Dantas Bezerra
+Data: 25/11/222 | PERIODO: 2022.2  | PROJETO: Completo | Versão: 0.2
+OBJETIVO DESSE ARQUIVO: Explicar o funcionamento do programa e sua execução.
 #
-# CONTEÚDO:
-#   SOBRE O FUNDAMENTO TEÓRICO DO CÓDIGO E SUA FUNCIONALIDADE
-#	1 BREVE DESCRIÇÃO DO PROGRAMA E SEU RESULTADO
-#	2 PREREQUISITOS E AMBIENTE DE EXECUÇÃO - Como executar este programa
-#	3 SOBRE O CÓDIGO
-#       3.1 BANCO DE DADOS - SCRIPT
-#       3.2 FUNÇÕES
-#       3.3 SERVIDOR - FLASK
-#	4 SOBRE O RESULTADO - Explicação da obtenção dos resultados
-#
+CONTEÚDO:
+SOBRE O FUNDAMENTO TEÓRICO DO CÓDIGO E SUA FUNCIONALIDADE
+	1 BREVE DESCRIÇÃO DO PROGRAMA E SEU RESULTADO
+	2 PREREQUISITOS E AMBIENTE DE EXECUÇÃO - Como executar este programa
+	3 SOBRE O CÓDIGO
+       3.1 BANCO DE DADOS - SCRIPT
+       3.2 FUNÇÕES
+       3.3 SERVIDOR - FLASK
+	4 SOBRE O RESULTADO - Explicação da obtenção dos resultados
+
 ####################################################################################
 
 SOBRE O FUNDAMENTO TEÓRICO DO CÓDIGO E SUA FUNCIONALIDADE
