@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>	PySys Saude </title>
+		<style>
+            body{
+            color: #364d63;
+            background-color: #edeff4";
+            border-radius: 5px;
+            padding: 5px;
+            }
+        </style>
+	</head>
+	<body style="background-color:#edeff4">
+		<!-- TOPO -->
+		<section style="background-color:#edeff4">
+			<h1 align="center">PySys Saude</h1>
+		</section>
+
+		<!-- Corpo da pág -->
+		<section style="background-color: #b2b9d0">
+			<h2>Sobre</h2>
+			<p> </p>
+			<p> Os bancos de dados permitem que informacoes sejam ordenadas e armazenadas,
+    para realizar a manipulacao destes, ha a estrutura CRUD (Criar, Consultar, Atualizar
+    e Deletar), destaca-se que, esta estrutura pode ser acessada via navegador, para
+    tal, a linguagem de programaaoo sera um agemte intermediario entre o usuario via web e
+    o banco de dados (myslq, mysqlite, mongodb, ....). Em Python, para a elaboracao da CRUD
+    com acesso via navegador, ha uma serie de ferramentas e frameworks que possibilitam isto.
+    Das quais, destaca-se o microframework Flask, usado neste projeto, em relacao ao banco
+    de dados, foi-se adotado o banco MySQLite, apenas pela natureza otimizada de reduzir
+    processamento no projeto, motivo que e amplamente usado em aplicacoes moveis. <br>Dessa
+    forma, evidencia-se a aplicabilidade do python para propor solucoes viaveis as novas
+    necessidades e demandas. Das quais, cita-se a questao do monitoramento e gestao da saude
+    frente aos casos de Covid-19 (pandemia no Novo Coronavirus, notificada desde 2019, seguindo
+    ate a data deste projeto), que gera comprometimento respiratorio e pode levar ao obito,
+    motivo que justifica os esforcos em prol de reduzir os casos de Covid-19.</p>
+
+
+           <h3 align="center">MENU</h3>
+
+			<form action="/" method="GET">
+				<input type="submit" value="Pagina inicial" onclick="index()"/>
+			</form>
+
+			<form action="/cadastrar" method="post">
+				<input type="submit" value="Cadastrar" onclick="cadastrar()"/>
+			</form>
+
+			<form action="/consultar" method="post">
+				<input type="submit" value="Consultar" onclick="consultar()"/>
+			</form>
+
+			<form action="/atualizar" method="post">
+				<input type="submit" value="Atualizar" onclick="atualizar()"/>
+			</form>
+
+			<form action="/remover" method="post">
+				<input type="submit" value="Remover" onclick="remover()"/>
+			</form>
+
+			<h1>{{msg}}</h1>
+			<p>
+				{{dados}}
+			</p>
+		</section>
+		<section>
+			<p> PySys Saude - Todos os direitos reservados</p>
+		</section>
+	</body>
+</html>

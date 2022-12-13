@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>Atualizar</title>
+		<style>
+            body{
+            color: #364d63;
+            background-color: #edeff4";
+            border-radius: 5px;
+            padding: 5px;
+            }
+        </style>
+	</head>
+
+	<body style="background-color:#edeff4">
+		<!-- TOPO -->
+		<section style="background-color:#edeff4">
+			<h1 align="center">PySys Saude</h1>
+		</section>
+
+		<!-- Corpo da pág -->
+		<section style="background-color: #b2b9d0">
+			<h2>Atualizar</h2>
+			<p> </p>
+
+           <h3 align="center">MENU</h3>
+
+			<form action="/" method="GET">
+				<input type="submit" value="Pagina inicial" onclick="index()"/>
+			</form>
+
+			<form action="/cadastrar" method="post">
+				<input type="submit" value="Cadastrar" onclick="cadastrar()"/>
+			</form>
+			<form action="/consultar" method="post">
+				<input type="submit" value="Consultar" onclick="consultar()"/>
+			</form>
+			<form action="/atualizar" method="post">
+				<input type="submit" value="Atualizar" onclick="atualizar()"/>
+			</form>
+			<form action="/remover" method="post">
+				<input type="submit" value="Remover" onclick="remover()"/>
+			</form>
+
+			<h1>
+				Leia, consulte e verifique os dados antes de remover ou volte ao Menu Principal
+				<BR>Para remover HOSPITAIS: Insira os dados de busca e pressione em Remover.
+				<BR>Para remover PROFISSIONAIS: Insira os dados de busca e pressione em Remover.
+				<br>Para remover PACIENTES: Insira os dados de busca e pressione em Remover.
+				<br>
+				<br>A remocao de HOSPITAIS, PACIENTES e PROFISSIONAIS apaga os elementos relacionados entre si, consulte os dados antes de remover-los!
+				<br>Caso deseje CONSULTAR, ALTERAR ou INSERIR cadastros, consulte o menu deste sistema.
+				<br>
+			</h1>
+
+			<h1>{{msg}}</h1>
+
+
+			<form action="/remover-hospitais" method="post">
+				 <fieldset>
+			  <div class="form-group">
+				<label for="nome">ID do Hospital</label>
+				<input type="text" id="nome" name="nome" class="form-control">
+			  </div>
+			  <button type="submit" class="btn btn-primary btn-salvar">Remover Hospital</button>
+				 </fieldset>
+			</form>
+
+			<form action="/remover-profissionais" method="post">
+				 <fieldset>
+
+      		 <div class="form-group">
+				<label for="cpf">CPF do Profissional</label>
+				<input type="text" id="cpf" name="cpf" class="form-control">
+			  </div>
+			  <button type="submit" class="btn btn-primary btn-salvar">Remover Profissional</button>
+				 </fieldset>
+			</form>
+
+			<form action="/remover-pacientes" method="post">
+				<fieldset>
+      		 <div class="form-group">
+				<label for="cpf_paciente">CPF do Paciente</label>
+				<input type="text" id="cpf_paciente" name="cpf_paciente" class="form-control">
+			  </div>
+			  <button type="submit" class="btn btn-primary btn-salvar">Remover Paciente</button>
+				 </fieldset>
+			</form>
+
+		</section>
+
+		<section>
+			<p> PySys Saude - Todos os direitos reservados</p>
+		</section>
+	</body>
+</html>

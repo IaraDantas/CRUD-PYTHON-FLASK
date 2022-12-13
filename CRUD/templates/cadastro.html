@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>Cadastrar</title>
+		<style>
+            body{
+            color: #364d63;
+            background-color: #edeff4";
+            border-radius: 5px;
+            padding: 5px;
+            }
+        </style>
+	</head>
+
+	<body style="background-color:#edeff4">
+		<!-- TOPO -->
+		<section style="background-color:#edeff4">
+			<h1 align="center">PySys Saude</h1>
+		</section>
+
+		<!-- Corpo da pág -->
+		<section style="background-color: #b2b9d0">
+			<h2>Cadastrar</h2>
+			<p> </p>
+
+           <h3 align="center">MENU</h3>
+
+			<form action="/" method="GET">
+				<input type="submit" value="Pagina inicial" onclick="index()"/>
+			</form>
+
+			<form action="/cadastrar" method="post">
+				<input type="submit" value="Cadastrar" onclick="cadastrar()"/>
+			</form>
+			<form action="/consultar" method="post">
+				<input type="submit" value="Consultar" onclick="consultar()"/>
+			</form>
+			<form action="/atualizar" method="post">
+				<input type="submit" value="Atualizar" onclick="atualizar()"/>
+			</form>
+			<form action="/remover" method="post">
+				<input type="submit" value="Remover" onclick="remover()"/>
+			</form>
+
+			<h1>
+				Leia e verifique os dados antes de inserir ou volte ao Menu Principal
+				<BR>Para cadastrar HOSPITAIS: Insira os dados e pressione em salvar
+				<BR>Para cadastrar PROFISSIONAIS: Insira os dados e pressione em salvar.
+				<br>Para cadastrar PACIENTES: Insira os dados e pressione em salvar.
+				<br>
+				<br> Caso deseje CONSULTAR, ALTERAR ou REMOVER o cadastro, consulte o menu deste sistema.
+				<br>
+			</h1>
+
+			<h1>{{msg}}</h1>
+			<p></p>
+
+			<form action="/cadastrar-hospitais" method="post">
+				 <fieldset>
+			  <div class="form-group">
+				<label for="nome">Nome do Hospital</label>
+				<input type="text" id="nome" name="nome" class="form-control">
+			  </div>
+
+			  <div class="form-group">
+				<label for="endereco">Endereco do Hospital</label>
+				<input type="text" id="endereco" name="endereco" class="form-control">
+			  </div>
+
+			  <div class="form-group">
+				<label for="especialidade">Especialidade do Hospital</label>
+				<input type="text" id="especialidade" name="especialidade" class="form-control">
+			  </div>
+
+			  <button type="submit" class="btn btn-primary btn-salvar">Salvar Novo Hospital</button>
+				 </fieldset>
+			</form>
+
+
+			<form action="/cadastrar-profissionais" method="post">
+				 <fieldset>
+			  <div class="form-group">
+				<label for="nome_pro">Nome Completo do Profissional (EX: Maria de Jesus)</label>
+				<input type="text" id="nome_pro" name="nome_pro" class="form-control">
+			  </div>
+
+			  <div class="form-group">
+
+				<label for="local_trabalho">Local de Trabalho [ID do Hospital]</label>
+				<input type="text" id="local_trabalho" name="local_trabalho" class="form-control">
+			  </div>
+
+			  <div class="form-group">
+				<label for="cargo">Cargo desempenhado (EX: Enfermeiro, ...)</label>
+				<input type="text" id="cargo" name="cargo" class="form-control">
+			  </div>
+
+			  <div class="form-group">
+				<label for="salario">Salario (Entre 1212 a 100000)</label>
+				<input type="text" id="salario" name="salario" class="form-control">
+			  </div>
+
+
+      		 <div class="form-group">
+				<label for="cpf">CPF do Profissional (apenas numeros)</label>
+				<input type="text" id="cpf" name="cpf" class="form-control">
+			  </div>
+
+      		 <div class="form-group">
+				<label for="email">E-mail do profissional (Ex: nome_cargo@hospital.com)</label>
+				<input type="text" id="email" name="email" class="form-control">
+			  </div>
+
+      		 <div class="form-group">
+				<label for="telefone">Telefone (apenas numeros)</label>
+				<input type="text" id="telefone" name="telefone" class="form-control">
+			  </div>
+
+			  <button type="submit" class="btn btn-primary btn-salvar">Salvar Novo Profissional</button>
+				 </fieldset>
+			</form>
+
+
+			<form action="/cadastrar-pacientes" method="post">
+				<fieldset>
+
+			  <div class="form-group">
+				<label for="nome_paciente">Nome completo do Paciente (EX: Maria de Jesus)</label>
+				<input type="text" id="nome_paciente" name="nome_paciente" class="form-control">
+			  </div>
+
+			  <div class="form-group">
+				<label for="local_internado">Local de internamento [ID do Hospital]</label>
+				<input type="text" id="local_internado" name="local_internado" class="form-control">
+			  </div>
+
+			  <div class="form-group">
+				<label for="profissional">Profissional responsavel [ID do profissional]</label>
+				<input type="text" id="profissional" name="profissional" class="form-control">
+			  </div>
+
+			  <div class="form-group">
+				<label for="doenca">Diagnostico/Nome da patologia</label>
+				<input type="text" id="doenca" name="doenca" class="form-control">
+			  </div>
+
+      		 <div class="form-group">
+				<label for="cpf_paciente">CPF do Paciente (apenas numeros)</label>
+				<input type="text" id="cpf_paciente" name="cpf_paciente" class="form-control">
+			  </div>
+
+      		 <div class="form-group">
+				<label for="email_paciente">Email do Paciente (Ex: nome_sobrenome@provedor.com)</label>
+				<input type="text" id="email_paciente" name="email_paciente" class="form-control">
+			  </div>
+
+      		 <div class="form-group">
+				<label for="telefone_paciente">Telefone do Paciente (apenas numeros)</label>
+				<input type="text" id="telefone_paciente" name="telefone_paciente" class="form-control">
+			  </div>
+
+			  <button type="submit" class="btn btn-primary btn-salvar">Salvar Novo Paciente</button>
+				 </fieldset>
+			</form>
+
+		</section>
+		<section>
+			<p> PySys Saude - Todos os direitos reservados</p>
+		</section>
+	</body>
+</html>
